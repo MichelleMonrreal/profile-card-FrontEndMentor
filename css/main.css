@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 161, 173);
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.background-images {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg-pattern-top.svg) no-repeat top 200% left 122%, url(../images/bg-pattern-bottom.svg) no-repeat bottom 190% left -25%;
+    z-index: 2;
+}
+
+
+.profile-card {
+    background-color: white;
+    width: 21rem;
+    height: 24rem;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.profile-card img {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.profile-card__background {
+    background: url(../images/bg-pattern-card.svg);
+    border-radius: 15px 15px 0 0;
+    height: 8.4rem;
+    width: 21rem;
+}
+
+.profile-card__name {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.profile-card__name h2 {
+    margin: 0;
+    color: rgb(45, 50, 72);
+    font-size: 1.1rem;
+}
+
+.profile-card__name span {
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    margin-left: 5px;
+}
+
+.profile-card__name p {
+    margin-top: 10px;
+    color: rgb(150, 150, 150);
+
+}
+
+.profile-card hr {
+    margin-top: 30px;
+    border-bottom: 1px;
+    border-width: thin;
+    border-color: rgba(150, 150, 150, 0.225);
+}
+
+
+.profile-card__stats {
+    display: inline-block;
+    padding: 0;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.profile-card__stat {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 24px;
+}
+
+.profile-card__stat span {
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    font-size: 0.7rem;
+}
+
+
+@media (min-width: 90rem) {
+    
+    .background-images {
+        width: 100vw;
+        height: 100vh;
+        background: url(../images/bg-pattern-top.svg) no-repeat top 170% left -70%, url(../images/bg-pattern-bottom.svg) no-repeat bottom 220% left 160%;
+    }
+
+}
+
+
+
+
+
+
+/* FOOTER */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 5px;
+}
+
+.attribution a {
+    color: rgb(62, 82, 163);
+}
+
+
+
+.colors {
+    color: rgb(25, 162, 174);
+    color: rgb(45, 50, 72);
+    color: rgb(106, 111, 129);
+    color: rgb(150, 150, 150);
+}
